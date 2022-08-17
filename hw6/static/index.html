@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Search</title>
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+    <script src="static/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+</head>
+<body>
+    <p id="title">Stock Search</p>
+    <div id="search_box">
+        <form>
+            <input type="button" name="search" id="search" value=""/>
+            <input minlength="1" type="text" name="symbol" id="symbol" placeholder ="Enter Stock Ticker Symbol" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999" required/>
+            <input type="button" name="delete" id="delete" onclick="resetAll()"/>
+            <input type="text" style="display:none">
+        </form>
+    </div>
+
+    <div id="not_found_error">Error : No record has been found, please enter a valid symbol.</div>
+
+    <div id="content">
+        <div id="content_titles">
+            <button id="btn1" class="title_btn" onclick="showCompany(1)">Company</button>
+            <button id="btn2" class="title_btn" onclick="showSummary(2)">Stock Summary</button>
+            <button id="btn3" class="title_btn" onclick="showCharts(3)">Charts</button>
+            <button id="btn4" class="title_btn" onclick="showNews(4)">Latest News</button>
+        </div>
+        <div id="content_company" class="contents">
+            <img src="" id="com_pic" class="" style="margin-bottom:10px"/>
+            <div class="com_content">
+                <div class="com_content_left">
+                    <p  class="com_left">Company Name&ensp;</p>
+                    <p  class="com_left">Stock Ticker Symbol&ensp;</p>
+                    <p  class="com_left">Stock Exchange Code&ensp;</p>
+                    <p  class="com_left">Company Start Date&ensp;</p>
+                    <p  class="com_left">Category&ensp;</p>
+                </div>
+                <div class="com_content_right">
+                    <p id="com_name" class="com_left">&ensp;</p>
+                    <p id="com_symbol" class="com_left">&ensp;</p>
+                    <p id="com_code" class="com_left">&ensp;</p>
+                    <p id="com_date" class="com_left">&ensp;</p>
+                    <p id="com_category" class="com_left">&ensp;</p>
+                </div>
+            </div>
+        </div>
+        <div id="content_summary" class="contents">
+             <div class="com_content">
+                <div class="com_content_left">
+                    <p  class="com_left">Stock Ticker Symbol&ensp;</p>
+                    <p  class="com_left">Trading Day&ensp;</p>
+                    <p  class="com_left">Previous Closing Price&ensp;</p>
+                    <p  class="com_left">Opening Price&ensp;</p>
+                    <p  class="com_left">High Price&ensp;</p>
+                    <p  class="com_left">Low Price&ensp;</p>
+                    <p  class="com_left">Change&ensp;</p>
+                    <p  class="com_left">Change Persent&ensp;</p>
+                </div>
+                <div class="com_content_right">
+                    <p id="sum_symbol" class="com_right">&ensp;</p>
+                    <p id="sum_day" class="com_right">&ensp;</p>
+                    <p id="sum_pc" class="com_right">&ensp;</p>
+                    <p id="sum_op" class="com_right">&ensp;</p>
+                    <p id="sum_hp" class="com_right">&ensp;</p>
+                    <p id="sum_lp" class="com_right">&ensp;</p>
+                    <div>
+                        <p id="sum_change" class="com_right">&ensp;</p>
+                        <img id="sum_pic1" class="sum_pics" src=""/>
+                    </div>
+                    <p id="sum_cp" class="com_right" style="float:left">&ensp;</p>
+                     <img id="sum_pic2" class="sum_pics" src=""/>
+                </div>
+            </div>
+            <div id="sum_trend">
+                <div id="block">
+                    <div id="bl1">Strong Sell</div>
+                    <div id="bl2" class="bl"></div>
+                    <div id="bl3" class="bl"></div>
+                    <div id="bl4" class="bl"></div>
+                    <div id="bl5" class="bl"></div>
+                    <div id="bl6" class="bl"></div>
+                    <div id="bl7" >Strong Buy</div>
+                </div>
+            </div>
+            <div id="trend_text">Recommendation Trends</div>
+        </div>
+        <div id="content_charts" class="contents">
+            <div id="charts"></div>
+        </div>
+        <div id="content_news" class="contents"></div>
+    </div>
+
+    <script type="text/javascript" src="static/index.js"></script>
+</body>
+</html>
+

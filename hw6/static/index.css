@@ -1,0 +1,260 @@
+body{
+    background-image: url("/static/img/back.svg");
+    background-position: 35% 0%;
+    background-repeat: no-repeat;
+}
+/*search area*/
+#search_box{
+    background-color: white;
+    margin: 0 auto;
+    width: 590px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    box-shadow:4px 4px 8px #DCDCDC;
+}
+#symbol{
+    width:500px;
+    height: 40px;
+    border: none;
+    vertical-align: middle;
+    margin-left: 10px;
+    border-right: 1px solid #DCDCDC;
+}
+#symbol:focus{
+    border:0;
+    outline:none;
+}
+#title{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Comic Sans MS";
+}
+#search{
+    background-image: url("/static/img/search-solid.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    border: none;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+#search:hover{
+    opacity: 1;
+}
+#delete{
+    margin-left: 10px;
+    background-image: url("/static/img/times-solid.svg");
+    background-position:center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    border: none;
+    vertical-align: middle;
+}
+#delete:hover{
+    opacity: 1;
+}
+
+/*error area*/
+#not_found_error{
+    background-color: #DCDCDC;
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 200px auto;
+    border-radius: 10px;
+    color:  #696969;
+    font-size: 14px;
+    display: none;
+}
+
+
+/*content area*/
+/*titles*/
+#content_titles{
+    width: 70%;
+    margin: 170px auto;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    display: none;
+}
+.title_btn{
+    border: none;
+    background: transparent;
+    height: 50px;
+    margin: -3px;
+
+}
+
+.title_btn_focus{
+    background-color: #A9A9A9;
+}
+.title_btn_hover{
+    background-color: #D3D3D3;
+}
+
+/*company*/
+.contents{
+    margin-top: -120px;
+    background-color: white;
+    text-align: center;
+}
+#content_company{
+    display: none;
+}
+#com_pic{
+    display: block;
+    margin: 0 auto;
+}
+.com_content{
+    margin-left: 60px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.com_content_left{
+    width: auto;
+    float: left;
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+    line-height:20px
+}
+.com_content_right{
+    width: auto;
+    float: left;
+    text-align: left;
+    font-size: 13px;
+    color: #888888;
+    line-height:20px
+}
+.com_left,.com_right{
+    border-top:1px solid #DCDCDC ;
+    border-bottom:1px solid #DCDCDC;
+    margin-top: -14px;
+}
+
+/*summary*/
+#content_summary{
+    display: none;
+}
+.sum_pics{
+    
+    height: 10px;
+    width: auto;
+    float: left;
+    
+}
+#sum_pic1{
+    margin-top: -30px;
+    margin-left: 40%;
+}
+#sum_pic2{
+    margin-top: -10px;
+    margin-left: 5%;
+}
+#sum_trend{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+#trend_text{
+    font-size: 20px;
+    font-weight: 100;
+}
+.bl{
+    width: 50px;
+    height: 50px;
+    float: left;
+    color: white;
+    line-height: 50px;
+}
+#bl2{
+    background-color: red;
+}
+#bl3{
+    background-color: #A52A2A;
+}
+#bl4{
+    background-color: #6B8E23;
+}
+#bl5{
+    background-color: #7CFC00 ;
+}
+#bl6{
+    background-color: #98FB98;
+}
+#bl1{
+    width: 50px;
+    height: 50px;
+    float: left;
+    color: red;
+}
+#bl7{
+    width: 50px;
+    height: 50px;
+    float: left;
+    color: #7CFC00;
+}
+#block{
+    margin-left: 40%;
+    height: 60px;
+}
+
+/*charts*/
+#content_charts{
+    display: none;
+    margin-top: -140px;
+
+}
+#charts{
+    height: auto;
+    width: 70%;
+    margin: 0px auto;
+
+}
+
+/*show news*/
+#content_news{
+    display: none;
+}
+.news{
+    background-color: #F5F5F5;
+    width: 70%;
+    height: 90px;
+    margin: 0px auto;
+    margin-top: 10px;
+    text-align: left;
+}
+.pics{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+#news_title{
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+#news_date{
+    position: relative;
+    top: -15px;
+    left: 10px;
+}
+#news_link{
+    position: relative;
+    top: -30px;
+    left: 10px;
+}
+
+
+
+
+
+
+

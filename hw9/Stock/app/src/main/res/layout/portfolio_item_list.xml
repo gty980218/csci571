@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="@drawable/main_bottom_line">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.27"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/portfolio_ticker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AAPL"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/portfolio_shares"
+                android:layout_weight="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="5dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_weight="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" shares"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.27"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/portfolio_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:gravity="right"
+            android:layout_marginRight="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7">
+
+                <ImageView
+                    android:id="@+id/portfolio_arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/portfolio_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$0.00(0.00%)"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:gravity="right"
+                android:paddingRight="15dp"
+                android:layout_weight="0.3"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.46"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/portfolio_redirect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

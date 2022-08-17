@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent" android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Nov 11 2022"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PORTFOLIO"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:background="@color/gray"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:background="@drawable/main_bottom_line">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Net Worth"
+                            android:paddingLeft="15dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/portfolio_cash"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$25000.00"
+                            android:paddingLeft="15dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cash Balance"
+                            android:paddingLeft="15dp"
+                            android:textSize="20dp"
+                            android:gravity="right"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/portfolio_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$25000.00"
+                            android:paddingLeft="15dp"
+                            android:textSize="20dp"
+                            android:gravity="right"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/portfolio_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FAVORITES"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:background="@color/gray"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/favorites_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/main_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Powered by Finnhub"
+                android:textStyle="italic"
+                android:clickable="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

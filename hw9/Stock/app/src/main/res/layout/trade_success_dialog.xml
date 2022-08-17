@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trade_success_bg"
+    android:backgroundTint="@color/green"
+    app:cardCornerRadius="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratulations!"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="70dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You have successfully "
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/trade_success_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sold "
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/trade_success_shares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shares of "
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/trade_success_ticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AAPL"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+        <android.widget.Button
+            android:id="@+id/trade_suceess_done"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:text="DONE"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

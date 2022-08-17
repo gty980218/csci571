@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_bg"
+    app:cardCornerRadius="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trade "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/trade_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Tesla Inc "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Share"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+            <EditText
+                android:id="@+id/trade_get_shares"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:hint="0" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="shares"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/trade_shares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="right"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*$"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/trade_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1091.84"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/share = "
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/trade_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"/>
+            <TextView
+                android:id="@+id/trade_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25000.00"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" to buy "/>
+            <TextView
+                android:id="@+id/trade_ticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TSLA"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1"
+            android:layout_marginBottom="50dp">
+            <Button
+                android:id="@+id/trade_buy"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="BUY"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+            <Button
+                android:id="@+id/trade_sell"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/green"
+                android:text="SELL"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

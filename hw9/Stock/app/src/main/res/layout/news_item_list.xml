@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/news_border"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.9">
+                <TextView
+                    android:id="@+id/news_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="yahoo 6 hours ago"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/news_headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apple : introduces new version of iMovie featuring Storyboards and Magic Movie"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:layout_weight="0.1">
+                <ImageView
+                    android:id="@+id/news_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_bg"
+    app:cardCornerRadius="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="110dp"
+            android:orientation="vertical"
+            android:background="@drawable/dialog_bottom"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yahoo"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/dialog_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="March 20, 2022"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/dialog_headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apple : introduces new version of iMovie featuring Storyboards and Magic Movie"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/dialog_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apple today introduced a new version of iMovie with features that make it easier than ever to create beautiful edited videos on iPhone and iPad. Storyboards helps aspiring content creators and moviemakers learn to edit and improve their video storytelling skills with pre-made templates for popular types of videos shared on social, with colleagues, or with classmates — videos like DIYs, cooking tutorials, product reviews, science experiments, and more. Storyboards makes it"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:maxLines="10"
+                android:ellipsize="end"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="0.9"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:id="@+id/dialog_google"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@mipmap/google"
+                android:layout_weight="0.3"/>
+            <ImageView
+                android:id="@+id/dialog_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@mipmap/twitter"
+                android:layout_weight="0.3"/>
+            <ImageView
+                android:id="@+id/dialog_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@mipmap/facebook"
+                android:layout_weight="0.3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
